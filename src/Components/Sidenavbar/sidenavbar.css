@@ -1,0 +1,252 @@
+body{
+    background-color: #FFFFFF;
+}
+.nav{
+    height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: black;
+    text-align: center;
+    border-bottom:1px solid #DBDBDB ;
+   
+    
+}
+.nav p{
+    cursor: pointer;
+    font-size: 20px;
+     font-weight: bold;
+}
+.nav .icon{
+    width: 25px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    cursor: pointer;
+   
+}
+ 
+.nav .namer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 25px;
+    border-right:1px solid #DBDBDB ;
+}
+.search-content{
+    padding: 9px;
+    
+}
+.search-content input[type="search"]{
+    background-color:  #F5F5F5;
+}
+ .search {
+    width:417px;
+    border: none;
+    display: block;
+    padding: 9px 4px 9px 50px;
+    background: transparent url("https://img.icons8.com/?size=1x&id=iOnTtJTbQtVu&format=png") no-repeat  2px;
+}
+ 
+.extra{
+     margin-left: 400px;
+}
+.extra .naming{
+    padding-left: 40px;
+}
+.extra .naming p{
+    font-size: 16px;
+}
+.extra .naming p span{
+    font-size: 14px;
+    color: #787486;
+    padding-left: 40px;
+}
+ 
+ 
+/* sidebar css*/
+.sidebar-container{
+    background-color:#fff;
+    color: black;
+    width: 242px;
+    height: calc(100vh - 60px);
+    overflow-y:scroll ;
+    overflow-x: hidden;
+    border-right:1px solid #DBDBDB ;
+}
+ 
+ 
+.sidebar-container::-webkit-scrollbar{
+    display: none;
+}
+.nav-option{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    gap: 20px;
+    width: 210px;
+}
+.nav-option h5{
+    font-size: 16px;
+    color: #787486;
+    padding-top: 5px;
+}
+.nav-option h5:hover{
+    font-size: 16px;
+    color: black;
+}
+.nav-option:hover, .nav-option:hover i{
+ 
+    color: black;
+    cursor: pointer;
+}
+.nav-option i{
+    color: black;
+    font-size: 20px;
+
+}
+.sidebar-content .side_top_menu{
+    padding: 10px;
+    border-bottom: 1px solid #DBDBDB;
+}
+.option2{
+    padding: 10px;
+    gap: 110px;
+    width: 100%; 
+}
+.nav-option3{ 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+ 
+     
+ 
+}
+.nav-option3 .inner-t h5{
+    font-size: 16px;
+    color: #787486;
+    text-decoration: none;
+}
+.nav-option3 .menu{
+     width: 16px;
+     margin-right: 10px;
+     visibility: hidden;
+}
+.nav-option3:hover  {
+    background-color: #F5F5F5;
+    color:black;
+    border-radius: 10px;
+ 
+}
+.nav-option3:hover .inner-t h5  {
+    color:black;
+    border-radius: 10px;   
+    text-decoration: none;
+}
+.nav-option3:hover .menu {
+     visibility: visible;
+     text-decoration: none;
+}
+.nav-option3 .inner-t{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.nav-option3 .inner-t span{
+    font-size: 20px;
+     margin-top: -6px;
+   
+}
+.side_bottom_menu Link{
+    text-decoration: none;
+}
+.side_bottom_menu .tips{
+    margin: 0 auto;
+    width: 206px;
+    height: 233px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+.side_bottom_menu .tips .tips_head{
+   font-size: 14px;
+   font-weight: bold;
+   text-align: center;
+  
+}
+.side_bottom_menu .tips .tips_body{
+    text-align: center;
+    font-size: 12px;
+    width: 166px;
+    margin: 0 auto;
+
+}
+.side_bottom_menu .tips .text{
+    width: 190px;
+    margin: 0 auto;
+}
+.side_bottom_menu .tips .text input{
+   border: none;
+   padding: 5px;
+   text-align: center;
+}
+ 
+.side_bottom_menu   .circle{
+    height: 40px;
+    width: 80px;
+    border-top-left-radius:90px;
+    border-top-right-radius:90px;
+    background-color: #F5F5F5; 
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+     
+}
+.side_bottom_menu  .circle img{
+    border-radius: 40%;
+     
+}
+
+@media screen and (min-width:768px){
+    .navcollaspe{
+        width: 0px;
+    }
+    .navcollaspe .nav-option h3{
+        display: none;
+    }
+    .navcollaspe .nav-option {
+        padding: 28px;
+    }
+    .small{
+        display:none;
+    }  
+}
+
+@media screen and (max-width:767px){
+     .large{
+            display: none;
+     }
+     .sidebar-container{
+        display: none;
+     }
+     .smallnav{
+        display: block;
+     }
+     .namer h2{
+        display: none;
+     }
+   
+}
+@media screen and (max-width:800px) {
+    .extra{
+        display: block;
+        margin-left: 10px;
+        width: 100%;
+   }
+}
